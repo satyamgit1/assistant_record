@@ -62,7 +62,7 @@ const updateAssistantById = async (req, res) => {
   }
 };
 
-// Export all controller functions
+
 module.exports = {
   createAssistant,
   deleteAssistantById,

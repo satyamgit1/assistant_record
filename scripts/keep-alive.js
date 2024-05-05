@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const apiUrl = 'https://assistant-record.onrender.com/api/assistants'; // Replace with your API endpoint
+const apiUrl = 'https://assistant-record.onrender.com/api/assistants'; 
 
 async function keepAlive() {
     try {
@@ -16,4 +16,8 @@ async function keepAlive() {
     }
 }
 
+// Call keepAlive() immediately
 keepAlive();
+
+// Call keepAlive() every 15 minutes (in milliseconds)
+setInterval(keepAlive, 15 * 60 * 1000);
